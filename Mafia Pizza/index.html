@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizzaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <img src="mafia.jpg"  width="200" alt="Logo da Pizzaria">
+        <h1> Monte sua Pizza! </h1>
+        <form action="pedidos.php" method="POST">
+            <h3>Escolha o tamanho</h3>
+            <label><input type="radio" name="tamanho" value="Broto" checked> Broto - R$ 55 </label>
+            <label><input type="radio" name="tamanho" value="Grande"> Grande - R$ 65 </label>
+
+            <h3>Sabores</h3>
+            <label><input type="checkbox" name="sabores[]" value="Calabresa"> Calabresa</label>
+            <label><input type="checkbox" name="sabores[]" value="Mussarela"> Mussarela</label>
+            <label><input type="checkbox" name="sabores[]" value="Frango"> Frango</label>
+            <label><input type="checkbox" name="sabores[]" value="Prestigio"> Prestigio</label>
+            <label><input type="checkbox" name="sabores[]" value="Confete">Confete</label>
+
+            <h3>Borda</h3>
+            <label><input type="checkbox" name="borda" value="Calabresa">Catupiry</label>
+            <label><input type="checkbox" name="borda" value="Mussarela">Requeijão</label>
+            <label><input type="checkbox" name="borda" value="Chocolate">Chocolate</label>
+
+            <h3>Refrigerante:</h3>
+            <select name="refri">
+                <option value="Nenhum">Nenhum</option>
+                <option value="Coca">Coca 2L - R$ 12</option>
+                <option value="Guarana">Guaraná 2L - R$ 10</option>
+                <option value="Guarana">Pepsi 2L - R$ 10</option>
+                <option value="Guarana">Coca lata - R$ 5</option>
+            </select>
+
+            <h3>Cupom de Desconto</h3>
+            <input type="text" name="cupom">
+
+            
+
+            <button type="submit">Calcular Total</button>
+        </form>
+    </div>
+</body>
+</html>
