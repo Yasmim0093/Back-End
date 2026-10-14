@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordTour.IA</title>
+    <link rel="stylesheet" href="WordT.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <img src="word.png" width="200" alt="GeekIA Logo">
+
+        <h2>Especialista em pontos turísticos! 🧳✈️ </h2>
+
+        <p>Responda e descubra o que combina mais com você!</p>
+
+        <form action="WordT.php" method="POST">
+
+            <div class="form-group">
+                <label>Qual país você está/quer ir?</label>
+
+                <select name="tipo" required>
+                    <option value="">Selecione...</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="França">França</option>
+                    <option value="Japão">Japão</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Qual sua vibe?</label>
+
+                <select name="gen" required>
+                    <option value="">Selecione...</option>
+                    <option value="Natureza">Natureza</option>
+                    <option value="Compras">Compras</option>
+                    <option value="Diversão">Diversão</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Quantas pessoas?</label>
+
+                <select name="tam" required>
+                    <option value="">Selecione...</option>
+                    <option value="duas">2</option>
+                    <option value="quatro">4</option>
+                    <option value="uma">1</option>
+                </select>
+            </div>
+
+            <button type="submit">Recomendar</button>
+
+        </form>
+
+    </div>
+
+</body>
